@@ -4,25 +4,28 @@ import CourseCard from "./CourseCard";
 const CourseSection = () => {
   const courses = [
     {
-      title: "Optimización de proyectos con IA",
+      title: "Gestión de proyectos con metodologías ágiles",
       instructor: "Federico Lixklett",
       date: "20 y 21 nov",
       time: "18 a 21hs",
-      isVirtual: true
+      isVirtual: true,
+      imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "Diseño de experiencias digitales",
+      title: "Liderazgo efectivo en equipos de trabajo",
       instructor: "Ana Martínez",
       date: "15 nov",
       time: "18 a 20hs",
-      isVirtual: true
+      isVirtual: true,
+      imageUrl: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
-      title: "Estrategias de contenido para redes",
+      title: "Gestión del tiempo y productividad empresarial",
       instructor: "Carlos Gómez",
       date: "25 nov",
       time: "19 a 21hs",
-      isVirtual: false
+      isVirtual: false,
+      imageUrl: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -48,6 +51,7 @@ const CourseSection = () => {
               date={course.date}
               time={course.time}
               isVirtual={course.isVirtual}
+              imageUrl={course.imageUrl}
             />
           ))}
         </div>

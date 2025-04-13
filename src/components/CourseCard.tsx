@@ -40,7 +40,20 @@ const CourseCard = ({
         {instructor && (
           <div className="absolute -bottom-6 right-6">
             <div className="w-12 h-12 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center overflow-hidden">
-              <User className="text-gray-600" />
+              {imageUrl ? (
+                <img 
+                  src={`/instructors/${instructor.split(' ')[0].toLowerCase()}.jpg`} 
+                  alt={instructor}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "";
+                    e.currentTarget.parentElement.innerHTML = `<User className="text-gray-600" />`;
+                  }}
+                />
+              ) : (
+                <User className="text-gray-600" />
+              )}
             </div>
           </div>
         )}

@@ -1,5 +1,6 @@
 
 import { Quote } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const QuoteSection = () => {
   return (
@@ -13,22 +14,23 @@ const QuoteSection = () => {
           <div className="text-sm mb-4 code-tag">[agencia-i]</div>
           
           <h2 className="text-3xl md:text-4xl font-bold mb-10 relative z-10">
-            Es momento de hackear lo establecido y dejar una huella que nos trascienda.
+            El liderazgo no se trata de ser el mejor, sino de hacer que tu equipo alcance su máximo potencial.
           </h2>
           
           <div className="flex items-center mt-12">
-            <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mr-4">
-              <span className="text-2xl font-bold">F</span>
-            </div>
+            <Avatar className="h-12 w-12 border-2 border-white/20 mr-4">
+              <AvatarImage src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Federico Lixklett" />
+              <AvatarFallback className="bg-white/20 text-white">FL</AvatarFallback>
+            </Avatar>
             <div>
               <p className="font-medium">Federico Lixklett</p>
-              <p className="text-sm opacity-70">Fundador de agencia·i</p>
+              <p className="text-sm opacity-70">Director de Proyectos en agencia·i</p>
             </div>
           </div>
           
           <div className="mt-10 flex items-center">
             <div className="h-px bg-white/20 flex-grow mr-4"></div>
-            <div className="text-sm opacity-70 code-tag">[ innovar | inspirar | impactar ]</div>
+            <div className="text-sm opacity-70 code-tag">[ liderar | innovar | impactar ]</div>
             <div className="h-px bg-white/20 flex-grow ml-4"></div>
           </div>
         </div>
