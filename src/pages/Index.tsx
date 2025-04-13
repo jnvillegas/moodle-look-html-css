@@ -6,6 +6,7 @@ import ColorSection from "../components/ColorSection";
 import TypeSection from "../components/TypeSection";
 import KeyFeaturesSection from "../components/KeyFeaturesSection";
 import QuoteSection from "../components/QuoteSection";
+import ExecutiveSlider from "../components/ExecutiveSlider";
 import Footer from "../components/Footer";
 import { Badge } from "@/components/ui/badge";
 
@@ -34,6 +35,7 @@ const Index = () => {
         </div>
         
         <CourseSection />
+        <ExecutiveSlider />
         <KeyFeaturesSection />
         <QuoteSection />
         <ColorSection />
